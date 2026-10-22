@@ -26,10 +26,10 @@ PUSH_KEY = os.environ.get('PUSH_KEY', '')
 PUSH_TYPE = os.environ.get('PUSH_TYPE', '')  # serverchan / pushplus / telegram
 
 # 是否启用 QQ 音乐听歌任务
-ENABLE_QQ_MUSIC = os.environ.get('ENABLE_QQ_MUSIC', 'true').lower() == 'true'
+ENABLE_QQ_MUSIC = os.environ.get('ENABLE_QQ_MUSIC', 'true').lower() != 'false'
 
 # 是否启用 QQ 手游加速任务
-ENABLE_QQ_GAME = os.environ.get('ENABLE_QQ_GAME', 'true').lower() == 'true'
+ENABLE_QQ_GAME = os.environ.get('ENABLE_QQ_GAME', 'true').lower() != 'false'
 
 # ============================================================
 # 日志
